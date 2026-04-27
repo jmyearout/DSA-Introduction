@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: course1
+title: DSA Introduction
+level: beginner
+description: This assignment is to help students get an initial understanding of
+  why we need to use DSA structures vs. just using built-in methods and
+  libraries within the language.
+cardImageUrl: https://vscodeedu.com/assets/course-cards/card6.png
+contacts:
+  - displayName: Jeffrey Yearout
+    pictureUrl: https://avatars.githubusercontent.com/u/206356714?v=4
+    homePageUrl: https://github.com/jmyearout
+units:
+  - id: unit1
+    title: Unit 1
+    lessons:
+      - id: lesson1
+        title: Lesson 1
+        lessonParts:
+          - id: lessonpart1
+            title: Page 1
