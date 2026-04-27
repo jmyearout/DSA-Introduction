@@ -1,7 +1,45 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart1
-title: Page 1
+title: Why Data Structures Matter
 content: >
+  ### Learning Targets
+
+
+  > Understand how performance changes as dataset size increases\
+
+  > Explain why some built-in tools slow down at scale\
+
+  > Compare lists vs. sets for searching, inserting, and removing data\
+
+  > Answer the key question: "Why do we need to learn data structures?"
+
+
+  ### Grade Level: 9-12
+
+
+  ### Standards Addressed
+
+
+  L2.AP.V.01: Compare and contrast simple data structures and their uses to
+  simplify solutions, generalizing computational problems instead of repeatedly
+  using primitive variables.
+
+
+  L2.AP.A.06: Evaluate algorithms in terms of their efficiency, correctness, and
+  clarity.
+
+
+  L2.AP.M.02: Analyze a large-scale computational problem and identify
+  generalizable patterns that can be applied to a solution.
+
+
+  L2.AP.PD.05: Develop and use a series of test cases to verify that a program
+  performs according to its design specifications.
+
+
+  ### Introduction
+
+
   In the world of programming, especially when working with Python, you might
   wonder why we need to learn about data structures and algorithms when there
   are so many built-in methods and libraries available. While Python's built-in

@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart2
+title: "Part 1: The Small Dataset"
+content: >
+  ### When Everything Seems Fine
+
+
+  Scenario: You are building part of a school information system that tracks
+  student ID numbers for students who have logged in today. To keep our
+  simulation extremely simple, we will just build a dataset of sequential
+  numbers, which of course would be TERRIBLE in real practice.
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: Why are sequential numbers for IDs not advisable for use in the real
+          world? What kinds of problems could such a practice create?
