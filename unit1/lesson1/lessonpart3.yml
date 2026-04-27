@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart3
+title: "Part 2: Scaling Up"
+content: |
+  ### Same Code, Bigger Data (The Problem Begins To Appear)
+
+  Step 4: Increase The Data Size
+
+  Replace your earlier code that created the list with this code.
+
+  ```
+  student_ids = []
+
+  for i in range(100000):
+      student_ids.append
+  ```
+
+  Step 5: Time A Search
+
+  Add the following code 
