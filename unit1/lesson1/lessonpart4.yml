@@ -1,0 +1,99 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart4
+title: "Part 3: Fixing The Problem With A Data Structure"
+content: >+
+  ### A Better Tool For The Job
+
+
+  **Step 8: Replace The List With A Set**
+
+
+  Python has as one of its data types a very powerful and useful structure
+  called a set. There are some special characteristics to keep in mind, however.
+  A set is a collection that is unordered, unindexed, and the individual items
+  are unchangeable, though you can add and remove items. The other critical
+  characteristic is that sets cannot contain any duplicates. If you add an item
+  that is already in the set, it will not add an extra one. So for our scenario
+  here with a list of student IDs, where all ID numbers should be unique, a set
+  will work well. Our question to ponder is if a set will improve runtime speed.
+
+
+  So that you can easily make comparisons, keep the existing code you have
+  written so far. Below your existing code, add some more "decoration" to
+  separate this final section. Perhaps another dashed line and then a header on
+  the output that says "ID list organized as set" or similar. 
+
+
+  Then let's create a new variable name called "student\_ids\_set" and use
+  Python's built-in set() to create a new empty set. We will then fill that set
+  with numbers from 1 to 1 million as before. There are shorter ways to do this
+  than using a for loop, but at this early point in learning, seeing the tasks
+  more in full is beneficial. How might you discover some easier and shorter
+  ways to accomplish this same task?
+
+
+  ```
+
+  # add this code below your existing code
+
+  print("-----------------------------------------")
+
+
+  print("ID list organized as a set\n")
+
+
+  student_ids_set = set()
+
+
+  for i in range(1, 1000001):
+      student_ids_set.add(i)
+  ```
+
+
+  Then you can copy and paste in all your runtime tests you created previously,
+  just remember to change what collection it is looking in! So in the three
+  lines that are returning True or False for whether an item is present or not,
+  where it says "student\_ids" should be changed to "student\_ids\_set" to it
+  runs on the correct collection. If you made any additional runtime tests that
+  call on the collection you will need to make the same changes there as well.
+
+
+  Run your code and observe the runtime using a set vs. using a list. Was the
+  change significant? EXTENSION: See if you can learn how to move your
+  randomized list into your new set and test the runtimes on a randomized order
+  to see how it differs.
+
+
+  **Step 9: What A Set CAN'T Do**
+
+
+  Add this at the end and try to run your code.
+
+
+  ```
+
+  print(student_ids[0])
+
+  print(student_ids_set[0])
+
+  ```
+
+
+  Do you see a value returned for both? Or does one of the commands produce an
+  error?
+
+showEditor: true
+editors:
+  - course1/studentIDsList.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: What can a list do that a set cannot?
+  - id: "2"
+    questions:
+      - id: "1"
+        type: reflection
+        content: What might be some reasons a programmer might still choose a list, even
+          with the sacrifice of runtime speed?

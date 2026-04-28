@@ -63,9 +63,9 @@ content: >
 
 
   Add the following code to your time tests to see what a search for an ID that
-  is not there will do in terms of performance. Would it make a difference if it
-  were just 1 past the last number (1000001), or several million as in this
-  sample? Feel free to alter the code and see what happens.
+  is not there will do in terms of runtime performance. Would it make a
+  difference if it were just 1 past the last number (1000001), or several
+  million as in this sample? Feel free to alter the code and see what happens.
 
 
   ```
@@ -107,8 +107,8 @@ content: >
 
 
   &#x20;after your first set of time tests, then copy the lines of code of the
-  time test and paste them in below the randomization. Add some blank lines and
-  other "decoration" to try and make your output look something like this:
+  runtime test and paste them in below the randomization. Add some blank lines
+  and other "decoration" to try and make your output look something like this:
 
 
   ```
