@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart4
 title: "Part 3: Fixing The Problem With A Data Structure"
-content: >+
+content: >
   ### A Better Tool For The Job
 
 
@@ -82,6 +82,15 @@ content: >+
   Do you see a value returned for both? Or does one of the commands produce an
   error?
 
+
+  **Extension Idea**
+
+
+  This isn't related to the main part of our lesson, but is an important one
+  nonetheless. If you've been copying and pasting the runtime tests, you should
+  notice that they are almost exactly the same in structure, with only the set
+  or list being utilized being different. Could these lines of code be better
+  handled through a function? See if you can improve your code!
 showEditor: true
 editors:
   - course1/studentIDsList.py
