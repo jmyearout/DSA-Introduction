@@ -73,7 +73,7 @@ content: >
   Were your predictions correct, and can you explain why?
 showEditor: true
 editors:
-  - course1/unit1/lesson1/lessonpart2/studentIDsList.py
+  - course1/studentIDsList.py
 questionGroups:
   - id: "1"
     questions:

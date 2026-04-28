@@ -1,20 +1,168 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart3
 title: "Part 2: Scaling Up"
-content: |
+content: >
   ### Same Code, Bigger Data (The Problem Begins To Appear)
 
-  Step 4: Increase The Data Size
 
-  Replace your earlier code that created the list with this code.
+  **Step 4: Increase The Data Size**
+
+
+  Replace your earlier code that created the list with this code. Note the size
+  of the list being created!
+
 
   ```
+
   student_ids = []
 
-  for i in range(100000):
+
+  for i in range(1, 1000001):
       student_ids.append
   ```
 
-  Step 5: Time A Search
 
-  Add the following code 
+  **Step 5: Time A Search**
+
+
+  Add the following code to traverse the list and search for an ID. Keep in mind
+  our list is completely ordered sequentially and by increments of 1. Will that
+  affect how quickly an ID can be found? Observe how the performance time is
+  affected when finding ID 100 vs. ID 999999. (Note: The import time statement
+  should be put at the TOP of your code.)
+
+
+  ```
+
+  import time #place this at the top of your code
+
+
+  start = time.time()
+
+  print(100 in student_ids)
+
+  end = time.time()
+
+
+  print("Time taken to find ID 100:", end - start)
+
+
+  start = time.time()
+
+  print(999999 in student_ids)
+
+  end = time.time()
+
+
+  print("Time taken to find ID 999999:", end - start)
+
+  ```
+
+
+  **Step 6: Try An ID That Is Not There**
+
+
+  Add the following code to your time tests to see what a search for an ID that
+  is not there will do in terms of performance. Would it make a difference if it
+  were just 1 past the last number (1000001), or several million as in this
+  sample? Feel free to alter the code and see what happens.
+
+
+  ```
+
+  start = time.time()
+
+  print(9999999 in student_ids)
+
+  end = time.time()
+
+
+  print("Time taken if ID not present:", end - start)
+
+  ```
+
+
+  **Step 7: Unordered Data**
+
+
+  What if we scrambled the order of the ID numbers after we created them? How
+  might that affect performance time? Add
+
+
+  ```
+
+  import random
+
+  ```
+
+
+  at the top with your other import statement, and then add&#x20;
+
+
+  ```
+
+  random.shuffle(student_ids)
+
+  ```
+
+
+  &#x20;after your first set of time tests, then copy the lines of code of the
+  time test and paste them in below the randomization. Add some blank lines and
+  other "decoration" to try and make your output look something like this:
+
+
+  ```
+
+  ID list in numerical order
+
+
+  True
+
+  Time taken to find ID 100: 4.57763671875e-05
+
+  True
+
+  Time taken to find ID 999999: 0.00681757926940918
+
+  False
+
+  Time taken if ID not present: 0.006184577941894531
+
+  -----------------------------------------
+
+  ID list in random order
+
+
+  True
+
+  Time taken to find ID 100: 0.021811485290527344
+
+  True
+
+  Time taken to find ID 999999: 0.03071117401123047
+
+  False
+
+  Time taken if ID not present: 0.03344154357910156
+
+  ```
+
+
+  (If you happen to see a time ending in e-05 or something similar, do you
+  remember what that means?)
+showEditor: true
+editors:
+  - course1/studentIDsList.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: How did increasing the list size, and the randomizing the order of the
+          list affect runtime performance?
+  - id: "2"
+    questions:
+      - id: "1"
+        type: reflection
+        content: Was the change in runtime due to the code, or the size and organization
+          of the dataset itself? Explain your thinking.
