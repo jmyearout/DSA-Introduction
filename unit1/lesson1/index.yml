@@ -1,6 +1,20 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lesson1
-title: Lesson 1
+title: Lesson 1 - Why Data Structures Matter
+description: In the world of programming, especially when working with Python,
+  you might wonder why we need to learn about data structures and algorithms
+  when there are so many built-in methods and libraries available. While
+  Python's built-in functions are powerful and convenient, understanding data
+  structures and algorithms is crucial for several reasons.
+objectives: |-
+  Understand how performance changes as dataset size increases
+  Explain why some built-in tools slow down at scale
+  Compare lists vs. sets for searching, inserting, and removing data
+  Answer the key question: "Why do we need to learn data structures?"
+standards:
+  - csta-student:3b-ap-10
+  - csta-student:3b-da-06
+  - csta-student:3b-ap-12
 lessonParts:
   - lessonpart1.yml
   - lessonpart2.yml
